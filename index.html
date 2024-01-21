@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+</head>
+<body>
+    <div class="reviews-slider-container">
+
+
+        <div class="row">
+            <!-- Секція із зображеннями та попереднім/наступним відгуком -->
+            <div class="imgs-col-wrap">
+                <div class="imgs-col">
+                    <!-- Попередній відгук -->
+                    <div class="prev-slide-title-wrap ">
+                        <div class="prev-slide-title">
+                            <span class="prev-icon"></span>
+                            <div class="title prevRev">Попередній відгук</div>
+                        </div>
+                    </div>
+                    <!-- Слайдер ізображень -->
+                    <div class="imgs-wrap">
+                        <div class="imgs slider swiper-container-imgs">
+                            <!-- Слайди ізображень -->
+                            <div class="swiper-wrapper">
+                                <!-- slides -->
+                                <div class="swiper-slide">
+                                    <!-- лінка ацф полями -->
+                                    <img src="" alt="">
+                                </div>
+                                
+                                <!-- Додайте інші слайди аналогічно -->
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Наступний відгук -->
+                    <div class="next-slide-title-wrap ">
+                        <div class="next-slide-title">
+                            <span class="prev-icon"></span>
+                            <div class="title nextRev">Наступний відгук</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Секція із відгуками та їх описом -->
+            <div class="contents-col">
+                <div class="contents-wrap">
+                    <div class="shadow-lines"></div>
+                    <div class="contents slider swiper-container-contents">
+                        <div class="swiper-wrapper">
+                            <!-- slides -->
+                            <div class="swiper-slide">
+                                <div class="item">
+                                    <div class="item-wrap">
+                                        <div class="title"> Name etc.3333</div>
+                                        <div class="description">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eos fugiat voluptatem libero tempore nemo voluptate dolor? Aspernatur deleniti iste eum impedit exercitationem. Cum reiciendis deserunt quisquam quidem, molestiae facere.
+                                            Fugiat, quibusdam saepe mollitia autem illo nisi numquam repellendus dolorem vel fugit eveniet eum dolorum corrupti et laudantium maxime modi repellat cum nihil inventore temporibus quae? Sint, non. Magnam, voluptas?
+                                            Nobis distinctio, voluptas assumenda atque architecto enim amet quasi, officiis impedit dolore, excepturi omnis totam perspiciatis consectetur adipisci! Temporibus at animi modi veritatis facilis minus voluptatibus laudantium repudiandae culpa id.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Додайте інші елементи аналогічно -->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- ------------ -->
+        </div>
+
+
+    </div>
+</body>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+</html>
+
+<!-- 0000 -->
+<script>
+
+var swiperImgs = new Swiper('.swiper-container-imgs', {
+    effect: 'fade',
+    slidesPerView: 1, // Кількість видимих слайдів одночасно
+    spaceBetween: 10, // Відстань між слайдами
+    navigation: {
+        nextEl: '.nextRev', // Селектор елемента "Наступний слайд"
+        prevEl: '.prevRev', // Селектор елемента "Попередній слайд"
+    },
+    loop: true,
+    // Інші параметри Swiper за необхідності
+});
+
+var swiperContents = new Swiper('.swiper-container-contents', {
+    effect: 'fade',
+    slidesPerView: 1, // Кількість видимих слайдів одночасно
+    spaceBetween: 10, // Відстань між слайдами
+    navigation: {
+        nextEl: '.nextRev', // Селектор елемента "Наступний слайд"
+        prevEl: '.prevRev', // Селектор елемента "Попередній слайд"
+    
+    },
+    loop: true,
+    // Інші параметри Swiper за необхідності
+});
+
+</script>
+
+
